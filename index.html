@@ -1,0 +1,1508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Selçuk Selimli | Associate Professor of Mechanical Engineering</title>
+
+<meta name="description"
+content="Academic website of Selçuk Selimli, Associate Professor of Mechanical Engineering at Karabük University, Türkiye.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+<style>
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+:root {
+    --bg: #f7f8fa;
+    --white: #ffffff;
+    --text: #111827;
+    --muted: #667085;
+    --line: #e5e7eb;
+    --accent: #173f5f;
+    --accent-light: #edf4f8;
+    --dark: #0b1722;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.7;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    width: min(1120px, 92%);
+    margin: auto;
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: rgba(255,255,255,.92);
+    backdrop-filter: blur(16px);
+
+    border-bottom: 1px solid var(--line);
+}
+
+.nav-inner {
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 27px;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    color: #4b5563;
+}
+
+.nav-links a {
+    transition: .2s ease;
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+.nav-scholar {
+    padding: 8px 13px;
+
+    border: 1px solid #d0d5dd;
+    border-radius: 7px;
+
+    color: var(--dark);
+}
+
+.nav-scholar:hover {
+    border-color: var(--accent);
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+    background:
+        radial-gradient(
+            circle at 85% 15%,
+            #dcecf7 0,
+            transparent 32%
+        ),
+        var(--white);
+
+    padding: 105px 0 115px;
+}
+
+.hero-grid {
+    display: grid;
+
+    grid-template-columns: 1.25fr .75fr;
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+.eyebrow {
+    color: var(--accent);
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(52px, 7vw, 82px);
+
+    line-height: 1;
+
+    letter-spacing: -3px;
+
+    margin-bottom: 25px;
+}
+
+.hero h2 {
+    font-size: 21px;
+    font-weight: 600;
+
+    margin-bottom: 10px;
+}
+
+.affiliation {
+    color: var(--muted);
+
+    font-size: 15px;
+}
+
+.tagline {
+    margin-top: 27px;
+
+    font-size: 18px;
+
+    color: #344054;
+
+    max-width: 700px;
+}
+
+.buttons {
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 35px;
+
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 12px 20px;
+
+    border-radius: 8px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    border: 1px solid var(--line);
+
+    transition: .2s ease;
+}
+
+.btn-primary {
+    background: var(--dark);
+
+    color: white;
+
+    border-color: var(--dark);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: white;
+}
+
+.btn-secondary:hover {
+    border-color: #98a2b3;
+}
+
+
+/* =========================================================
+   PHOTO
+========================================================= */
+
+.photo-card {
+    display: flex;
+
+    justify-content: center;
+}
+
+.photo-placeholder {
+    width: 285px;
+    height: 350px;
+
+    border-radius: 22px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #e7edf2,
+            #cbd7e0
+        );
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    color: #536471;
+
+    font-size: 13px;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   SECTIONS
+========================================================= */
+
+section {
+    padding: 100px 0;
+}
+
+.section-label {
+    color: var(--accent);
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 11px;
+}
+
+.section-title {
+    font-family: "Playfair Display", serif;
+
+    font-size: 43px;
+
+    line-height: 1.2;
+
+    margin-bottom: 18px;
+}
+
+.section-intro {
+    max-width: 730px;
+
+    color: var(--muted);
+
+    margin-bottom: 48px;
+
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   RESEARCH
+========================================================= */
+
+.research-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+.research-card {
+    background: var(--white);
+
+    border: 1px solid var(--line);
+
+    border-radius: 14px;
+
+    padding: 29px;
+
+    transition: .25s ease;
+}
+
+.research-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 18px 40px rgba(15,23,42,.08);
+}
+
+.number {
+    color: #98a2b3;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+.research-card h3 {
+    margin: 14px 0 10px;
+
+    font-size: 18px;
+}
+
+.research-card p {
+    color: var(--muted);
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   FEATURED RESEARCH
+========================================================= */
+
+.featured {
+    background: var(--white);
+}
+
+.project {
+    border-top: 1px solid var(--line);
+
+    padding: 31px 0;
+
+    display: grid;
+
+    grid-template-columns: 120px 1fr;
+
+    gap: 30px;
+}
+
+.project-year {
+    color: var(--accent);
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: .5px;
+}
+
+.project h3 {
+    font-size: 20px;
+
+    margin-bottom: 8px;
+}
+
+.project p {
+    color: var(--muted);
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   METRICS
+========================================================= */
+
+.metrics {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+.metric {
+    background: var(--dark);
+
+    color: white;
+
+    padding: 36px;
+
+    border-radius: 14px;
+}
+
+.metric-number {
+    font-family: "Playfair Display", serif;
+
+    font-size: 46px;
+}
+
+.metric-label {
+    color: #b7c2cc;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   PROFILES
+========================================================= */
+
+.profile-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 14px;
+}
+
+.profile {
+    background: white;
+
+    border: 1px solid var(--line);
+
+    padding: 22px;
+
+    border-radius: 12px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition: .2s ease;
+}
+
+.profile:hover {
+    transform: translateY(-3px);
+
+    border-color: #c4ccd4;
+}
+
+.profile small {
+    display: block;
+
+    color: var(--muted);
+
+    margin-top: 5px;
+
+    font-weight: 400;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   ABOUT
+========================================================= */
+
+.about {
+    background: var(--white);
+}
+
+.about-text {
+    max-width: 830px;
+
+    font-size: 18px;
+
+    color: #344054;
+
+    line-height: 1.9;
+}
+
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.contact-box {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 40px;
+
+    padding: 40px;
+
+    background: white;
+
+    border: 1px solid var(--line);
+
+    border-radius: 15px;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    background: var(--dark);
+
+    color: white;
+
+    padding: 50px 0;
+}
+
+.footer-grid {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+footer p {
+    color: #aeb9c4;
+
+    font-size: 12px;
+
+    margin-top: 4px;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .nav-links {
+        gap: 14px;
+
+        font-size: 11px;
+    }
+
+    .nav-scholar {
+        display: none;
+    }
+
+    .hero {
+        padding: 75px 0;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+    h1 {
+        font-size: 55px;
+    }
+
+    .photo-card {
+        justify-content: flex-start;
+    }
+
+    .research-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .metrics {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project {
+        grid-template-columns: 1fr;
+
+        gap: 8px;
+    }
+
+    .contact-box {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .footer-grid {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 560px) {
+
+    .nav-links a:nth-child(2),
+    .nav-links a:nth-child(3) {
+        display: none;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .section-title {
+        font-size: 36px;
+    }
+
+    .profile-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVIGATION
+====================================================== -->
+
+<nav>
+
+<div class="container nav-inner">
+
+    <div class="nav-links">
+
+        <a href="#research">
+            Research
+        </a>
+
+        <a href="#publications">
+            Publications
+        </a>
+
+        <a href="#profiles">
+            Profiles
+        </a>
+
+        <a href="CV.pdf" target="_blank">
+            CV
+        </a>
+
+        <a
+        class="nav-scholar"
+        href="https://scholar.google.com/citations?user=uy-toIcAAAAJ&hl=en"
+        target="_blank">
+
+            Google Scholar
+
+        </a>
+
+        <a href="#contact">
+            Contact
+        </a>
+
+    </div>
+
+</div>
+
+</nav>
+
+
+
+<!-- =====================================================
+     HERO
+====================================================== -->
+
+<header class="hero">
+
+<div class="container hero-grid">
+
+
+    <div>
+
+        <div class="eyebrow">
+
+            Mechanical Engineering · Energy Systems
+
+        </div>
+
+
+        <h1>
+
+            Selçuk<br>
+            Selimli
+
+        </h1>
+
+
+        <h2>
+
+            Associate Professor of Mechanical Engineering
+
+        </h2>
+
+
+        <p class="affiliation">
+
+            Faculty of Engineering and Natural Sciences<br>
+            Karabük University, Türkiye
+
+        </p>
+
+
+        <p class="tagline">
+
+            Researching sustainable energy systems through
+            thermodynamics, renewable energy technologies,
+            heat transfer, and advanced performance analysis.
+
+        </p>
+
+
+        <div class="buttons">
+
+            <a
+            class="btn btn-primary"
+            href="#research">
+
+                Explore Research
+
+            </a>
+
+
+            <a
+            class="btn btn-secondary"
+            href="https://scholar.google.com/citations?user=uy-toIcAAAAJ&hl=en"
+            target="_blank">
+
+                Google Scholar
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="photo-card">
+
+        <!--
+        PLACE YOUR PHOTO HERE.
+
+        Later replace this block with:
+
+        <img
+            src="profile.jpg"
+            alt="Selçuk Selimli"
+            class="profile-photo">
+
+        -->
+
+        <div class="photo-placeholder">
+
+            PROFESSIONAL<br>
+            PHOTOGRAPH
+
+        </div>
+
+    </div>
+
+
+</div>
+
+</header>
+
+
+
+<!-- =====================================================
+     RESEARCH
+====================================================== -->
+
+<section id="research">
+
+<div class="container">
+
+
+    <div class="section-label">
+        Research
+    </div>
+
+
+    <h2 class="section-title">
+        Research Areas
+    </h2>
+
+
+    <p class="section-intro">
+
+        My research focuses on the development,
+        thermodynamic assessment and optimization
+        of sustainable energy systems, with particular
+        emphasis on solar energy, photovoltaic
+        technologies, heat transfer and advanced
+        thermofluids.
+
+    </p>
+
+
+    <div class="research-grid">
+
+
+        <div class="research-card">
+
+            <div class="number">01</div>
+
+            <h3>
+                Solar Energy & Photovoltaic Systems
+            </h3>
+
+            <p>
+                Photovoltaic systems, PV/T technologies,
+                solar tracking, partial shading, dust
+                effects and solar energy harvesting.
+            </p>
+
+        </div>
+
+
+
+        <div class="research-card">
+
+            <div class="number">02</div>
+
+            <h3>
+                Energy & Exergy Analysis
+            </h3>
+
+            <p>
+                Energy efficiency, exergy efficiency,
+                exergy destruction, sustainability and
+                thermodynamic performance assessment.
+            </p>
+
+        </div>
+
+
+
+        <div class="research-card">
+
+            <div class="number">03</div>
+
+            <h3>
+                PV Thermal Management
+            </h3>
+
+            <p>
+                PV cooling, fin structures, spray cooling,
+                phase-change materials and nanofluid-based
+                thermal management.
+            </p>
+
+        </div>
+
+
+
+        <div class="research-card">
+
+            <div class="number">04</div>
+
+            <h3>
+                Heat Transfer Enhancement
+            </h3>
+
+            <p>
+                Heat exchangers, heat pipes, twisted tapes,
+                corrugated tubes and thermo-hydraulic
+                performance enhancement.
+            </p>
+
+        </div>
+
+
+
+        <div class="research-card">
+
+            <div class="number">05</div>
+
+            <h3>
+                CFD, MHD & Thermofluids
+            </h3>
+
+            <p>
+                Computational fluid dynamics, numerical
+                modeling, magnetohydrodynamics and
+                advanced thermofluid systems.
+            </p>
+
+        </div>
+
+
+
+        <div class="research-card">
+
+            <div class="number">06</div>
+
+            <h3>
+                Sustainable Energy Systems
+            </h3>
+
+            <p>
+                Renewable energy technologies, solar
+                thermal systems, waste heat recovery
+                and sustainable energy applications.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FEATURED RESEARCH
+====================================================== -->
+
+<section id="projects" class="featured">
+
+<div class="container">
+
+
+    <div class="section-label">
+        Research Highlights
+    </div>
+
+
+    <h2 class="section-title">
+        Featured Research
+    </h2>
+
+
+    <p class="section-intro">
+
+        Selected research themes representing current
+        and emerging directions of my research.
+
+    </p>
+
+
+
+    <div class="project">
+
+        <div class="project-year">
+            PV / PV-T
+        </div>
+
+        <div>
+
+            <h3>
+                Advanced Photovoltaic Thermal Management
+            </h3>
+
+            <p>
+                Experimental and numerical investigations
+                of photovoltaic cooling, PV/T systems,
+                thermal management and performance
+                enhancement.
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="project">
+
+        <div class="project-year">
+            SOLAR
+        </div>
+
+        <div>
+
+            <h3>
+                Solar Tracking & PV Performance Optimization
+            </h3>
+
+            <p>
+                Investigation of solar tracking strategies
+                and their influence on photovoltaic energy
+                harvesting and system performance.
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="project">
+
+        <div class="project-year">
+            THERMO
+        </div>
+
+        <div>
+
+            <h3>
+                Energy, Exergy & Sustainability
+            </h3>
+
+            <p>
+                Thermodynamic assessment of energy systems
+                using energy, exergy, sustainability and
+                performance analysis methodologies.
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="project">
+
+        <div class="project-year">
+            HEAT
+        </div>
+
+        <div>
+
+            <h3>
+                Advanced Heat Transfer & Thermofluids
+            </h3>
+
+            <p>
+                Heat transfer enhancement, nanofluids,
+                ferrofluids, MHD flows and numerical
+                thermo-hydraulic analysis.
+            </p>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     METRICS
+====================================================== -->
+
+<section>
+
+<div class="container">
+
+
+    <div class="section-label">
+        Academic Profile
+    </div>
+
+
+    <h2 class="section-title">
+        Research Metrics
+    </h2>
+
+
+    <p class="section-intro">
+
+        Academic indicators from major scholarly
+        databases.
+
+    </p>
+
+
+    <div class="metrics">
+
+
+        <div class="metric">
+
+            <div class="metric-number">
+                44+
+            </div>
+
+            <div class="metric-label">
+                Google Scholar Publications
+            </div>
+
+        </div>
+
+
+
+        <div class="metric">
+
+            <div class="metric-number">
+                635+
+            </div>
+
+            <div class="metric-label">
+                Google Scholar Citations
+            </div>
+
+        </div>
+
+
+
+        <div class="metric">
+
+            <div class="metric-number">
+                15
+            </div>
+
+            <div class="metric-label">
+                Google Scholar h-index
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PUBLICATIONS
+====================================================== -->
+
+<section id="publications" class="featured">
+
+<div class="container">
+
+
+    <div class="section-label">
+        Publications
+    </div>
+
+
+    <h2 class="section-title">
+        Selected Publications
+    </h2>
+
+
+    <p class="section-intro">
+
+        Selected publications representing major
+        research themes.
+
+    </p>
+
+
+
+    <div class="project">
+
+        <div class="project-year">
+            SOLAR
+        </div>
+
+        <div>
+
+            <h3>
+                Photovoltaic Solar Energy & Tracking
+            </h3>
+
+            <p>
+                Research on photovoltaic performance,
+                solar tracking and enhanced solar
+                energy harvesting.
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="project">
+
+        <div class="project-year">
+            PV/T
+        </div>
+
+        <div>
+
+            <h3>
+                Nanofluid-Based PV/T Systems
+            </h3>
+
+            <p>
+                Research on nanofluid-assisted thermal
+                management and thermodynamic performance
+                of photovoltaic thermal systems.
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="project">
+
+        <div class="project-year">
+            HEAT
+        </div>
+
+        <div>
+
+            <h3>
+                Heat Transfer Enhancement
+            </h3>
+
+            <p>
+                Research involving heat exchangers,
+                heat pipes, twisted tapes, corrugated
+                tubes and advanced thermofluids.
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="buttons">
+
+        <a
+        class="btn btn-primary"
+        href="https://scholar.google.com/citations?user=uy-toIcAAAAJ&hl=en"
+        target="_blank">
+
+            View All Publications
+
+        </a>
+
+    </div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PROFILES
+====================================================== -->
+
+<section id="profiles">
+
+<div class="container">
+
+
+    <div class="section-label">
+        Academic Profiles
+    </div>
+
+
+    <h2 class="section-title">
+        Connect & Explore
+    </h2>
+
+
+    <p class="section-intro">
+
+        Academic profiles and research identifiers.
+
+    </p>
+
+
+    <div class="profile-grid">
+
+
+        <a
+        class="profile"
+        href="https://scholar.google.com/citations?user=uy-toIcAAAAJ&hl=en"
+        target="_blank">
+
+            Google Scholar
+
+            <small>
+                Publications & citations
+            </small>
+
+        </a>
+
+
+
+        <a
+        class="profile"
+        href="https://orcid.org/"
+        target="_blank">
+
+            ORCID
+
+            <small>
+                Researcher identifier
+            </small>
+
+        </a>
+
+
+
+        <a
+        class="profile"
+        href="https://www.researchgate.net/"
+        target="_blank">
+
+            ResearchGate
+
+            <small>
+                Research network
+            </small>
+
+        </a>
+
+
+
+        <a
+        class="profile"
+        href="https://unis.karabuk.edu.tr/akademisyen/selcukselimli"
+        target="_blank">
+
+            Karabük University
+
+            <small>
+                Official academic profile
+            </small>
+
+        </a>
+
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ABOUT
+====================================================== -->
+
+<section class="about">
+
+<div class="container">
+
+
+    <div class="section-label">
+        About
+    </div>
+
+
+    <h2 class="section-title">
+        Academic Profile
+    </h2>
+
+
+    <p class="about-text">
+
+        I am an Associate Professor of Mechanical Engineering
+        at Karabük University, Türkiye. My research interests
+        encompass renewable energy systems, solar energy,
+        photovoltaic and photovoltaic-thermal technologies,
+        energy and exergy analysis, heat transfer enhancement,
+        computational fluid dynamics and advanced thermofluids.
+
+    </p>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CONTACT
+====================================================== -->
+
+<section id="contact">
+
+<div class="container">
+
+
+    <div class="section-label">
+        Contact
+    </div>
+
+
+    <h2 class="section-title">
+        Academic Collaboration
+    </h2>
+
+
+    <div class="contact-box">
+
+
+        <p class="section-intro" style="margin:0">
+
+            For research collaboration, academic
+            correspondence and scientific inquiries.
+
+        </p>
+
+
+        <a
+        class="btn btn-primary"
+        href="https://unis.karabuk.edu.tr/akademisyen/selcukselimli"
+        target="_blank">
+
+            University Profile
+
+        </a>
+
+
+    </div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+====================================================== -->
+
+<footer>
+
+<div class="container footer-grid">
+
+
+    <div>
+
+        <strong>
+            Selçuk Selimli
+        </strong>
+
+        <p>
+            Associate Professor of Mechanical Engineering
+        </p>
+
+    </div>
+
+
+    <div>
+
+        <p>
+            Faculty of Engineering and Natural Sciences
+            · Karabük University · Türkiye
+        </p>
+
+    </div>
+
+
+</div>
+
+</footer>
+
+
+</body>
+</html>
